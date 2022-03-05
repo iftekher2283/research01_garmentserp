@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/textileerpdb?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">123</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <mapping class="model.Employee"/>
+    <mapping class="model.Buyer"/>
+    <mapping class="model.User"/>
+    <mapping class="model.Order"/>
+    <mapping class="model.Consumption"/>
+    <mapping class="model.FabricConsumption"/>
+    <mapping class="model.FabricConsumptionComponents"/>
+    <mapping class="model.ThreadConsumption"/>
+    <mapping class="model.ThreadConsumptionOperation"/>
+    <mapping class="model.CostingAccessoriesItem"/>
+    <mapping class="model.CostingAccessories"/>
+    <mapping class="model.CostingYarn"/>
+    <mapping class="model.CostingKnitting"/>
+    <mapping class="model.CostingDyeing"/>
+    <mapping class="model.CostingThread"/>
+    <mapping class="model.CostingOthers"/>
+    <mapping class="model.Costing"/>
+  </session-factory>
+</hibernate-configuration>
